@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* 공통 : sns  */
+.commonSnsBox { position: absolute; right: 0; text-align: right; }
+.commonSnsBox .snsBtn { display: inline-block; width: 26px; height: 26px; overflow: hidden; margin-left: 3px; background: url("/images/web/common/sub/btnSns.gif") no-repeat 0 0; }
+.commonSnsBox .snsBtn > span { text-indent: -1000px; font-size: 0; line-height: 0; }
+.commonSnsBox .snsBtn2 > span { text-indent: -1000px; font-size: 0; line-height: 0; }
+.commonSnsBox .btnPrint { background-position: 0 0; }
+.commonSnsBox .btnFbook { background-position: -29px 0; }
+.commonSnsBox .btnTwt { background-position: -58px 0; }
+.commonSnsBox .btnKakaoTalk { background-position: -87px 0; }
+.commonSnsBox .btnKakaoStotry { background-position: -116px 0; }
+.commonSnsBox .btnNaverBand { background-position: -145px 0; }
+.commonSnsBox .btnShare { background-position: -174px 0; }
+.commonSnsBox .sns_more { display: none; position: absolute; top: 30px; right: 0; width: 150px; *width:107px; border: 1px solid #bbb; border-radius: 2px; padding: 10px 10px 10px 7px; z-index: 30; background-color: #fff; }
+
+.commonSnsBox .btnMenuBkmkOn {display:inline-block; width: 26px; height: 26px; background: url("/images/co/ma/icon_star_on.png") no-repeat 0 0;}
+.commonSnsBox .btnMenuBkmkOff {display:inline-block; width: 26px; height: 26px; background: url("/images/co/ma/icon_star_off.png") no-repeat 0 0;}
+
+
+@media (max-width:800px) {
+	.commonSnsBox { position: absolute; top: 21px; right: 2%; }
+}
+
+@media (max-width:480px) {
+	.commonSnsBox { top: 17px }
+}
+

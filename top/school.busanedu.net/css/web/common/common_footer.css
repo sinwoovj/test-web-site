@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* footer */
+.footer_link li.point1 a {color:#405dfd; font-weight:900;}
+.footer_link li.point a {color:#000000; font-weight:normal;}
+
+/* 카피메뉴 */
+#guidebox li.point1 a { color:#405dfd;  font-family:"NotoM"; font-weight:900;}
+#guidebox li.point a {color:#000000; font-weight:normal;}
+
+
+
+

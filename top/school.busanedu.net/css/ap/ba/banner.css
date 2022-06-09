@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* 100% 로 하면 전체 길이로 되어버리기때문에 주석 */
+/* .banner_zone{width: 100%;} */
+.banner_zone .inner ul li{margin-left:10px !important;}
+.banner_zone ul{height: 45px;}
+@media (max-width:800px) {
+.mbannerScroll{overflow-y:scroll !important;}
+}

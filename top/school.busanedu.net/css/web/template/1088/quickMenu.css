@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* 퀵메뉴 */
+
+.w_quickArea { position:absolute; top:20%; left:50%; width:210px; z-index: 100; height:100%; margin-left:620px}
+/* 학년반 바로가기*/
+.w_quickClass{ position:relative; min-height:auto; display:block; margin-bottom:10px; padding-bottom:12px; overflow:hidden;  border-left:1px solid #bbc0c6;  background:#fff;  border-radius:10px; box-shadow:1px 1px 2px 0 rgba(0, 0, 0, 0.5);  z-index:7;}
+.w_quickClass h2{ background:#4f6b8e; color:#fff; font-size:15px; text-align:center; font-family:'NotoM'; height:40px; line-height:40px}
+.w_quickClass ul{font-family:'돋움',Dotum; font-size:12px; line-height:41px; padding:10px 10px;}
+.w_quickClass ul li{ float:left; line-height:18px; word-break:keep-all;  display:block;  letter-spacing:-1px; color:#555; margin-right:10px; }
+.w_quickClass ul li span { width:50px; margin-right:5px; display:block;}
+.w_quickClass ul li select { width:72px;}
+.w_quickClass .btn_classGo { position:absolute; right:15px; bottom:12px;}
+.w_quickClass .btn_classGo img { width:20px; height:20px;}
+/* 퀵메뉴 바로가기 */
+.w_quick{ position:relative; height:auto; overflow:hidden;  border-left:1px solid #bbc0c6; background:#fff; border-radius:10px; box-shadow:1px 1px 2px 0 rgba(0, 0, 0, 0.5); z-index:7;  }
+.w_quick h2{ background:#f7941e; color:#fff; font-size:15px; text-align:center; font-family:'NotoM'; height:40px; line-height:40px}
+.w_quick ul{font-family:'돋움',Dotum; font-size:12px; line-height:41px;}
+.w_quick ul li{ padding:10px 10px; line-height:18px; border-top:1px solid #bbc0c6; word-break:keep-all;}
+.w_quick ul li:first-child { border-top:none;}
+.w_quick ul li a{ display:block;  letter-spacing:-1px; color:#555;}
+
+@media screen and (max-width: 800px){
+	
+	/* 퀵메뉴 */
+	.w_quickArea{ display:none}
+	
+}
+
+

@@ -1,0 +1,3 @@
+$(function () {
+	noOpenerReferrer("Y","Y","");
+});

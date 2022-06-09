@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+#container {position:relative; height:100%; font-family:"NotoR";}
+#container:after {content:""; display:block; clear:both; overflow:hidden}
+
+.main_content {position:relative; z-index:7; width:100%; margin:0px auto 30px; padding-top:0;}
+.main_content:after {content:""; display:block; clear:both; overflow:hidden;}
+
+.MC_box_wrap1{position:relative; width:1200px; height:auto; overflow:hidden; margin:0 auto;} /*공지사항,오늘의 식단을 묶는 div*/
+.MC_box_wrap2{position:relative; width:100%; height:auto; overflow:hidden; margin:50px auto 0; background:url('/images/web/template/1088/main/M_bg.png') no-repeat bottom;} /*바로가기,행사일정을 묶는 div*/
+.MC_box_wrap3{position:relative; width:1200px; height:auto; overflow:hidden; margin:0 auto;} /*포토앨범,팝업존을 묶는 div*/
+
+
+.MC_box1 {position:relative; width:100%; height:400px; margin-bottom:25px}/* 비주얼 */
+.MC_box2 {position:relative; width:1200px; height:50px; margin:0 auto 25px;}/* 전광판 */
+.MC_box3 {position:relative; width:70%; height:269px; float:left;}/* 공지사항 */
+.MC_box4 {position:relative; width:25%; height:269px; float:right;}/* 오늘의식단 */
+.MC_box5 {position:relative; width:1200px; height:120px; margin:0 auto;}/* 바로가기 */
+.MC_box6 {position:relative; width:1200px;; height:130px; margin:0 auto;}/* 행사일정 */
+.MC_box7 {position:relative; width:70%; height:233px; float:left;}/* 포토앨범 */
+.MC_box8 {position:relative; width:25%; height:233px; float:right;}/* 팝업존 */
+
+@media (max-width: 800px) {
+	
+	#container,
+	.main_content,
+	.MC_box1, .MC_box2, .MC_box3, .MC_box4, .MC_box5, .MC_box6, .MC_box7, .MC_box8 {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box}
+	
+	#container {width:100%; margin-top:70px;}
+	
+	.MC_box_wrap1{width:95%; margin:3% auto 0;}
+	.MC_box_wrap2{margin:3% auto;}
+	.MC_box_wrap3{width:95%;}
+
+	.MC_box1 {height:auto;}/* 비주얼 */
+	.MC_box2 {width:95%; margin:3% auto 0;}/* 전광판 */
+	.MC_box3 {width:100%; height:249px;}/* 공지사항 */
+	.MC_box4 {width:100%; height:auto; margin:3% auto 0;}/* 오늘의식단 */
+	.MC_box5 {width:95%; height:auto; margin:3% auto 0;}/* 바로가기 */
+	.MC_box6 {width:95%; height:150px; margin:0 auto;}/* 행사일정 */
+	.MC_box7 {width:49%;}/* 포토앨범 */
+	.MC_box8 {width:49%;}/* 팝업존 */
+
+}
+
+@media (max-width: 680px) {
+	.MC_box6 {height:auto;}
+	.MC_box7 {width:100%;}/* 팝업존 */
+	.MC_box8 {width:100%; margin:0;}/* 행사일정 */
+	
+}
+
+@media (max-width: 580px) {	
+
+	
+}
+
+@media (max-width: 480px) {	
+	.MC_box3 {height:360px;}/* 공지사항 */
+}
+
+@media (max-width: 380px) {	
+	.MC_box2, .MC_box_wrap1, .MC_box_wrap2, .MC_box_wrap3 {width:90%;}
+}

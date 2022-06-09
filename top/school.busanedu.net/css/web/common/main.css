@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@import url("/css/web/common/common_main_widget.css");
+
+.poplistWrap{width:294px; padding:2px; border:1px solid #c5c5c5; position:absolute; left:0; top:0; /* 위치값 */}
+.poplistWrap .inner{ position:relative; width:100%}
+.poplistWrap .inner > h1{ background: url('/images/tempDisp/common/tit_icon.png') no-repeat 14px 7px #4a77d3; padding-left:48px; height:41px; line-height:41px; overflow:hidden; color:#fff; font-family:'NanumBold'; font-size:17px;}
+.poplistWrap .inner .btnClose{ position:absolute; right:0; top:0; font-size:0; line-height:0; text-indent:-9999em; width:41px; height:41px; background:url(/images/tempDisp/common/btnClose.png) no-repeat}
+
+.poplistWrap .popupList{height:301px; overflow:hidden; overflow-y:auto}
+.poplistWrap .popupList ul{ font-family:'Nanum'; font-size:13px; line-height:25px; padding:3% 5% 4%}
+.poplistWrap .popupList ul li { line-height:20px; margin:4% 0}
+.poplistWrap .popupList ul li a{ display:block; color:#666; background:url(/images/tempDisp/common/icon_dot.gif) no-repeat 0 9px; padding-left:10px}
+.poplistWrap .popupList ul li a:hover{ color:#4a77d3}
+
+/* (리스트팝업) 통합팝업공지 20190118*/
+div.pop_header {width:100%; height:65px; background:#0a7fd2 /* url("/images/web/common/sub/pop_bg.png")  no-repeat 50% 50%;*/}
+
+div.pop_wrap {position:relative; width:980px; padding:15px 0; margin:0 auto; }
+
+.p_txt_1{line-height:30px; text-align:center; font-family:"맑은 고딕"; font-size:18px; font-weight:bold; letter-spacing:-1px; color:#fff;}
+.p_txt_2{margin:3px auto; width:98%;  border:1px solid #ccc; border-radius:5px; line-height:35px; font-family:"맑은 고딕"; font-size:14px; font-weight:bold; text-indent:20px; color:#000;background:#f4f4f4;}
+
+ul.notice_btn {position:absolute; top:20px; right:10px; font-family:"맑은 고딕";}
+
+/* 버튼이미지 누락으로 인한 주석처리 2019-01-18 */
+/* ul.notice_btn li {float:left; width:80px; height:26px; margin-right:5px; text-align:center; background:url("/images/web/common/sub/btn.png") no-repeat;}
+
+ul.notice_btn li a {display:block; text-decoration:none; color:#fff; font-size:14px; padding:3px;}
+ul.notice_btn li.btn_close {width:30px; height:30px; background:url("/images/web/common/sub/btn_close.png") no-repeat; text-indent:-5000px;}
+ */
+ ul.notice_btn li {float:left; width:80px; height:26px; margin-right:5px; text-align:center; /* background:url("/images/web/common/sub/btn.png") no-repeat; */}
+
+ul.notice_btn li a {display:block; text-decoration:none; color:#fff; font-size:14px; padding:3px;}
+ul.notice_btn li.btn_close {width:30px; height:30px; background:url("/images/web/common/sub/btn_close.png") no-repeat; text-indent:-5000px;}
+ 
+/*(리스트팝업) 팝업 리스트*/
+/* .listPopup {position:relative; width:380px; height:300px; border:1px solid #ccc; border-radius:5px; background:#fff;  } */
+/* .listPopup .list_box{ padding:3% 0 3% 0%; background:#d8e7ed url('/images/web/common/sub/list_bg.png')no-repeat 93% 98%; border:3px solid #0a7fd2;} */
+/* .listPopup .list_box ul{width:340px;height: 260px; font-family:'NotoB'; font-size:13px; line-height:25px;  overflow:hidden; overflow-y:auto;} */
+/* .listPopup .list_box ul li {display:block; line-height:20px; margin:3.5% 0; overflow:hidden;} */
+/* .listPopup .list_box ul li a{ display:block; color:#212121; background:url('/images/web/common/sub/pop_dot.gif') no-repeat 0 9px; padding-left:10px; text-overflow: ellipsis;  white-space: nowrap;   overflow: hidden; } */
+/* .listPopup .list_box ul li a:hover{ color:#4a77d3} */
+/* .listPopup .btn_close{position:absolute; top:10px; right:10px; width:20px; height:20px; background:url('/images/web/common/sub/btn_close.png')no-repeat;} */
+.listPopup {position:relative; width:380px; height:300px; border:1px solid #ccc; border-radius:5px; background:#fff; }
+.listPopup {background: #fff url('/images/web/common/sub/list_bg.jpg')no-repeat 50% 95% !important;}
+.listPopup .list_box{padding:3% 5% 3%; background: #f6f6f6;}/*200313수정*/
+.listPopup .list_box ul{width:340px; height:260px; font-family:'맑은 고딕'; font-size:13px; line-height:25px;  overflow:hidden; overflow-y:auto;}
+.listPopup .list_box ul li {display:block; line-height:20px; margin:3.5% 0; overflow:hidden;}
+.listPopup .list_box ul li a{ display:block; color:#000; background:url('/images/web/common/sub/pop_dot.gif') no-repeat 0 9px; padding-left:10px; text-overflow: ellipsis;  white-space: nowrap;   overflow: hidden; font-weight: 600;}
+.listPopup .list_box ul li a:hover{ color:#0054ff}
+.listPopup .btn_close{position:absolute; top:10px; right:10px; width:20px; height:20px; background:url('/images/web/common/sub/btn_close.png')no-repeat;}
+.ui-widget-header {  background: #1550a0 !important; color: #fff !important;}/*200313추가*/
+
+ @media screen and (max-width : 800px) {
+div.pop_header{display: none;}
+.ui-widget.ui-widget-content{display: none !important;}
+}
+
+ @media screen and (max-width : 480px) {
+
+}

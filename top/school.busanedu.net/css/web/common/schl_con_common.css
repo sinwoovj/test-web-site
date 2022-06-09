@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NotoR';
+    src: url(/font/NotoSansKR/NotoSansKR-Regular-Hestia.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    	 url(/font/NotoSansKR/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+p.line {margin-top:20px; padding-top:20px; border-top:1px dashed #9298af;}
+
+.tit1 {padding-left:25px; font-size:20px; line-height:1.6; font-family:"NotoM"; color:#111; background:url("/images/template/common/tit_1.png") no-repeat left 9px; }
+.tit2 {padding-left:25px; font-size:18px; line-height:1.6; font-family:"NotoM"; color:#111; background:url("/images/template/common/tit_2.png") no-repeat 1px 7px; }
+
+/* 테이블 */ 
+.table_st {position:relative; font-family:"NotoR"; font-size:14px; overflow-x:auto;}
+.table_st p.util {position:absolute; top:-25px; right:0; font-size:14px;}
+.table_st table { position:relative; width:100%; text-align:center; border-top:2px solid #051f5f;   border-left:1px solid #9298af; /*margin-left:-1px;*/ border-bottom:1px solid #9298af;} /* 181108 */
+.table_st th, .table_st td {border-right:1px solid #9298af; border-top:1px solid #9298af}
+.table_st th {padding:13px 3px; color:#111; font-family:"NotoM"; font-weight:normal; font-size:15px; background:#eff4fd; font-weight:normal}
+.table_st td {background:#fff; padding:10px 3px; color:#444;}
+.table_st thead th {background:#eff4fd; color:#333; border-bottom:1px solid #9298af; font-weight:bold}
+.table_st thead tr:last-child th {border-bottom:1px solid #9298af}
+.table_st thead th.bdr_b {border-bottom:1px solid #9298af}
+/*.table_st th:first-child, .table_st td:first-child {border-left:0}
+.table_st th:last-child, .table_st td:last-child {border-right:0}*/ /* 181108 */
+.table_st tfoot th {padding:13px 3px; color:#222; font-family:"NotoM"; font-size:13px; border-bottom:1px solid #9298af; border-left:1px solid #9298af; background:#f7f9fa;}
+.table_st tfoot td {padding:13px 3px; color:#222; font-family:"NotoM"; font-size:13px; border-bottom:1px solid #9298af; border-left:1px solid #9298af; background:#f7f9fa;}
+
+.table_st th.tBl, .table_st td.tBl {border-left:1px solid #9298af;}
+.table_st th.tBr, .table_st td.tBr {border-right:1px solid #9298af;}
+
+/* 탭스타일 */
+.tab_st {overflow:hidden; padding:1px 0 0 1px; margin-bottom:20px;}
+.tab_st li {width:33.3%; float:left; margin:-1px 0 0 -1px;}
+.tab_st li a {display:block; padding:13px 38px 13px 10px; line-height:20px; font-size:15px; font-family:'NotoR'; text-align:center; color:#555; border:1px solid #9298af; background:url("/images/web/ysjb-p/common/tab1_off.png") no-repeat right center #fff;}
+.tab_st li.on a, .tab_st li.on a:hover {font-family:'NotoM'; color:#fff; border:1px solid #264988; background:url("/images/web/common/sub/sub_com/tab1_on.png") no-repeat right center #0c3477;}
+.tab_st li a:hover {font-family:'NotoM'; color:#0c3477; border:1px solid #95a9cc; background:url("/images/web/common/sub/sub_com/tab1_off.png") no-repeat right center #eff4fd;}
+
+/* 탭 사이즈별 */
+.tab_li0 li {width:auto;}
+.tab_li2 li {width:50%;}
+.tab_li3 li {width:33.3%;}
+.tab_li4 li {width:24.9%;}
+.tab_li5 li {width:19.9%;}
+
+.banner_zone .inner ul li a {height:45px; width:100%;display:block; text-indent: -9999px;}
+.banner_zone .inner ul li a p{height:45px;width:100%;display:block; text-indent: -1px !important;}
+
+@media screen and (max-width :810px) {
+
+	/* 탭스타일 */
+	.tab_st li a {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li {width:50%;}
+	.tab_li4 li, .tab_li5 li {width:33.3%;}
+}
+
+@media screen and (max-width :740px) {
+   
+   
+   /* 이미지 */
+/*    .img img { width:100%} */
+
+    /* 테이블 스크롤 */
+   .table_st {overflow-x:auto; }
+}
+
+@media screen and (max-width :650px) {
+
+	/* 탭스타일 */
+	.tab_st li {width:50%;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li {width:100%;}
+	.tab_li4 li, .tab_li5 li {width:50%;}
+}
+
+
+@media screen and (max-width :490px) {
+
+   /* 탭스타일 */
+	.tab_st li {width:100%;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li, .tab_li4 li, .tab_li5 li {width:100%;}
+}

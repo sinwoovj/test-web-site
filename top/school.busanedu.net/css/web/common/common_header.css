@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+.headerSpanFontColor { color:#d2dcec; line-height:35px; font-family:"NotoR" } 
+/* jquery-ui.min.js 에서 z-index 로인해 팝업출력시 해당 메인이 클릭이 안돼서 메인 보다 낮게 z-index를 설정함*/
+.ui-widget-overlay { z-index: 1 !important; } 
+
+#gnb>li {
+	float:none !important;
+	display:inline-block !important;
+}
+
+/* 도움말css 시작*/
+.hpcmIcon { right:10px; top:135px;font-size:0; background:url("/images/ap/help.png") no-repeat; position: absolute; }
+.popover {	position: absolute; z-index: 1060; background-color: #fff; border: 1px solid #ccc; border-radius: 6px;}
+.popover.top {	margin-top: -10px}
+.popover.right {margin-left: 10px}
+.popover.bottom {margin-top: 10px}
+.popover.left {	margin-left: -10px}
+.popover-title {padding: 8px 14px;	margin: 0;	font-size: 14px; background-color: #f7f7f7;	border-bottom: 1px solid #ebebeb; border-radius: 5px 5px 0 0 }
+.popover-content {	padding: 9px 14px}
+.popover>.arrow, .popover>.arrow:after {position: absolute;	display: block;	width: 0; height: 0; border-color: transparent;	border-style: solid}
+.popover>.arrow { border-width: 11px}
+.popover>.arrow:after {	content: ""; border-width: 10px}
+.popover.top>.arrow {bottom: -11px;	left: 50%;	margin-left: -11px;	border-top-color: #999;	border-top-color: rgba(0, 0, 0, .25); border-bottom-width: 0}
+.popover.top>.arrow:after {	bottom: 1px; margin-left: -10px; content: " ";	border-top-color: #fff;	border-bottom-width: 0}
+.popover.right>.arrow {	top: 50%; left: -11px; margin-top: -11px; border-right-color: #999; border-right-color: rgba(0, 0, 0, .25);	border-left-width: 0}
+.popover.right>.arrow:after {bottom: -10px;	left: 1px;	content: " ";	border-right-color: #fff;	border-left-width: 0}
+.popover.bottom>.arrow {top: -11px;	left: 50%;	margin-left: -11px;	border-top-width: 0; border-bottom-color: #999;	border-bottom-color: rgba(0, 0, 0, .25)}
+.popover.bottom>.arrow:after {top: 1px;	margin-left: -10px;	content: " "; border-top-width: 0; border-bottom-color: #fff}
+.popover.left>.arrow {top: 50%; right: -11px; margin-top: -11px; border-right-width: 0;	border-left-color: #999; border-left-color: rgba(0, 0, 0, .25)}
+.popover.left>.arrow:after { right: 1px; bottom: -10px;	content: " "; border-right-width: 0; border-left-color: #fff}
+/* 도움말css 끝*/
+
+/* 상단 로그인정보 영역 보정 */
+.area_header .top_menu {
+    width: auto;
+    display: inline-block !important; 
+    padding-right: 20px !important;
+}
+/* 상단 로그인정보 영역 보정 끝 */
+
+/* 탭스타일 */
+/* 
+.tab_st {overflow:hidden; padding:10px 7px; border:1px solid #dadee6; background:#faf7f3;}
+.tab_st li {float:left; margin-right:0.5%;}
+.tab_st li a {display:block; padding:13px 0 13px 35px; line-height:20px; font-size:16px;  font-family:'Nanum'; color:#555; border:1px solid #ccc; background: #fff url("/images/web/common/sub/tab1_off.png")no-repeat 13px 50%;}
+.tab_st li.on a, .tab_st li.on a:hover {color:#fff; border:1px solid #a77a35; background:#a77a35 url(/images/web/common/sub/tab1_on.png) no-repeat 13px 50%; font-family:'NanumBold';}
+.tab_st li a:hover {color:#fff; background:#a77a35 url(/images/web/common/sub/tab1_on.png)no-repeat 13px 50%; font-family:'NanumBold';}
+.tab_st li:last-child{margin-right:0;} 
+*/
+
+.tab_st2 {overflow:hidden; border:1px solid #dedede; border-top:3px solid #4a5164; padding:10px; min-height:20px;}
+.tab_st2 li {float:left; margin:0 0 5px;}
+.tab_st2 li a {display:block; padding:3px 0 3px 20px; margin-right:5px; line-height:20px; font-size:14px;  font-family:'Nanum'; color:#555; background:#fff url("/images/web/common/sub/tab_dot.png") no-repeat 10px 50%;}
+.tab_st2 li.on a, .tab_st2 li.on a:hover {color:#cc3300; border-color:#2f71d2; font-family:'NanumBold';}
+.tab_st2 li a:hover {color:#cc3300; border-color:#45495b; font-family:'NanumBold';}
+
+/* 탭 사이즈별 */
+/* 
+.tab_li2 li {width:49.7%;}
+.tab_li3 li {width:33%;}
+.tab_li4 li {width:24.6%;}
+.tab_li5 li {width:19.6%;} 
+*/
+
+/* 탭스타일 */
+.tab_st {overflow:hidden; padding:1px 0 0 1px; margin-bottom:20px;}
+.tab_st li {width:33.3%; float:left; margin:-1px 0 0 -1px;}
+.tab_st li a {display:block; padding:13px 38px 13px 10px; line-height:20px; font-size:15px; font-family:'NotoR'; text-align:center; color:#555; border:1px solid #9298af; background:url("/images/web/common/sub/sub_com/tab1_off.png") no-repeat right center #fff;}
+.tab_st li.on a, .tab_st li.on a:hover {font-family:'NotoM'; color:#fff; border:1px solid #264988; background:url("/images/web/common/sub/sub_com/tab1_on.png") no-repeat right center #0c3477;}
+.tab_st li a:hover {font-family:'NotoM'; color:#0c3477; border:1px solid #95a9cc; background:url("/images/web/common/sub/sub_com/tab1_off.png") no-repeat right center #eff4fd;}
+
+/* 탭 사이즈별 */
+.tab_li0 li {width:auto;}
+.tab_li2 li {width:50%;}
+.tab_li3 li {width:33.3%;}
+.tab_li4 li {width:24.9%;}
+.tab_li5 li {width:19.9%;}
+
+@media screen and (max-width :810px) {
+
+	/* 탭스타일 */
+	.tab_st li a {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li {width:50%;}
+	.tab_li4 li, .tab_li5 li {width:33.3%;}
+	.hpcmIcon{top:75px;}
+}
+
+
+
+@media screen and (max-width :650px) {
+
+	/* 탭스타일 */
+	.tab_st li {width:50%;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li {width:100%;}
+	.tab_li4 li, .tab_li5 li {width:50%;}
+}
+
+
+
+@media screen and (max-width :580px) {
+
+
+}
+
+
+
+@media screen and (max-width :490px) {
+	/* 탭스타일 */
+	.tab_st li {width:100%;}
+
+	/* 탭 사이즈별 */
+	.tab_li2 li, .tab_li3 li, .tab_li4 li, .tab_li5 li {width:100%;}
+}
+
+
+
+@media screen and (max-width: 380px){
+
+}
